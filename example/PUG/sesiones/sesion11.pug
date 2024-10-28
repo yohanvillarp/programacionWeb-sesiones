@@ -1,0 +1,43 @@
+doctype html
+html(lang="es")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        title Sesion 11
+        link(rel="stylesheet", href="../css/main.css")
+        link(rel="stylesheet", href="../css/header.css")
+        link(rel="stylesheet", href="../css/sesion11.css")
+    body 
+        include ../header.pug 
+
+        section.ejercicios 
+            ul.lista 
+                li
+                    a(href="/example/SRC/sesiones/sesion11/closure.html")
+                        .descripcion
+
+                            p.nroEjercicio Closure
+                            p combinación de una función agrupada dentro de otra, con referencia a su estado adyacente. Otorga acceso al alcance de una función externa desde una interna.
+                li 
+                    a(href="/example/SRC/sesiones/sesion11/if-else.html")  
+                        .descripcion
+
+                            p.nroEjercicio if-else
+                            p Escribe un programa que solicite al usuario un número y determine si es positivo, negativo o cero, imprimiendo el resultado correspondiente.
+
+                li 
+                    a(href="/example/SRC/sesiones/sesion11/switch.html")
+                        .descripcion
+
+                            p.nroEjercicio switch
+                            p Crea un programa que reciba un monto a pagar y calcule su precio final, incluyendo un impuesto al valor agregado (IGV) del 18%. El programa mostrará el monto total a pagar después de aplicar el impuesto.
+
+
+
+                li 
+                    a(href="/example/SRC/sesiones/sesion11/for-ejercicios.html") 
+                        .descripcion
+
+                            p.nroEjercicio Ejercicios con for
+                            p Desarrolla un programa que solicite la base y la altura de dos triángulos. Luego calculará y comparará el área de ambos triángulos, mostrando también cuál de ellos tiene el área más grande.
+

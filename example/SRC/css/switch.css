@@ -1,0 +1,61 @@
+@charset "UTF-8";
+/* Configuración básica del fondo */
+body main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: red;
+  height: calc(100vh - 95px);
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: linear-gradient(45deg, #653030, #895c06, #b1cf50, #d7653c, #c51c70);
+  background-size: 400% 400%;
+  -webkit-animation: discoBackground 5s ease infinite;
+          animation: discoBackground 5s ease infinite;
+}
+@-webkit-keyframes discoBackground {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+@keyframes discoBackground {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+body main .card {
+  margin: 0 auto;
+  max-width: 550px;
+  padding: 20px;
+  border-radius: 5px;
+  background-color: white;
+  -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+body main .card h3 {
+  padding-bottom: 10px;
+}
+body main .card img {
+  border-radius: 15px;
+  padding: 20px;
+  width: 100%;
+}
+body main .card button {
+  font-size: 20px;
+  font-weight: bold;
+}

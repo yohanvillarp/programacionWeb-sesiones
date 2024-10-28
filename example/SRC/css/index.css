@@ -1,0 +1,73 @@
+body {
+  background: linear-gradient(45deg, #ff0000, #ff00ff, #0000ff, #00ff00, #ffff00);
+  background-size: 400% 400%;
+  -webkit-animation: discoBackground 5s ease infinite;
+          animation: discoBackground 5s ease infinite;
+}
+@-webkit-keyframes discoBackground {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+@keyframes discoBackground {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+body .seccion {
+  padding: 20px;
+  padding-bottom: 100px;
+}
+body .seccion .contenido {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-align: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+body .seccion .contenido .contenedor {
+  width: 60%;
+  padding: 60px;
+}
+body .seccion .contenido .imagen img {
+  width: 200px;
+}
+body .seccion2 .contenido .contenedor {
+  text-align: center;
+  background-color: rgba(232, 218, 218, 0.498);
+  padding: 60px;
+}
+body .seccion2 .contenido .contenedor .title {
+  text-align: center;
+  font-size: 40px;
+  padding: 20px;
+}
+body .seccion2 .contenido .contenedor .subtitles {
+  font-size: 20px;
+  padding: 20px;
+}
+body .seccion2 .contenido .contenedor .texto {
+  padding: 30px;
+}
+body .seccion2 .contenido .contenedor img {
+  width: 350px;
+}

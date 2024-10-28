@@ -1,0 +1,47 @@
+doctype html
+html(lang="es")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        title Document
+        link(rel="stylesheet", href="../../css/main.css")
+        link(rel="stylesheet", href="../../css/header.css")
+        link(rel="stylesheet", href="../../css/closure.css")
+    body 
+
+        include ../../header.pug
+
+        nav.explicacion
+            .ejemplos 
+                h3 Ejemplo 1 
+                pre.
+                    function base() { 
+                        let count = 1;
+
+                        //¿el parametro "a" es necesario?
+                        function contador(a){ 
+                            let count1 = 1; 
+                            count = count + count1; 
+                            console.log(count); 
+                        } 
+                        return contador; 
+                    } 
+                    const baseFuncion = base(); 
+                    baseFuncion();
+                button#example1 Ejecutar código 
+            .ejemplos 
+                h3 Ejemplo 2
+                pre.
+                    function makeFunc() { 
+                        const name="Mozilla"; 
+                        function displayName(){
+                            console.log(name);
+                        }
+                        return displayName;
+                    } 
+                    const myFunc = makeFunc(); 
+                    myFunc(); 
+                button#example2 Ejecutar código 
+
+        script(src="js/closure_ejercicio1.js")
+        script(src="js/closure_ejercicio2.js")

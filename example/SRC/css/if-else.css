@@ -1,0 +1,80 @@
+@charset "UTF-8";
+/* Configuración básica del fondo */
+body main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: red;
+  height: calc(100vh - 95px);
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: linear-gradient(45deg, #ff0000, #ff00ff, #0000ff, #00ff00, #ffff00);
+  background-size: 400% 400%;
+  -webkit-animation: discoBackground 5s ease infinite;
+          animation: discoBackground 5s ease infinite;
+}
+@-webkit-keyframes discoBackground {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+@keyframes discoBackground {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+body main .formulario {
+  margin: 0 auto;
+  max-width: 550px;
+  padding: 20px;
+  border-radius: 5px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border: 1px solid #ccc;
+}
+body main .formulario label {
+  display: block;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-size: 25px;
+}
+body main .formulario input[type=text] {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+body main .formulario input[type=number], body main .formulario select {
+  width: 40%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  font-size: 20px;
+}
+body main .formulario .enviar {
+  text-align: center;
+}
+body main .formulario .enviar #submit {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 40px;
+  color: white;
+  cursor: pointer;
+  background-color: transparent;
+}

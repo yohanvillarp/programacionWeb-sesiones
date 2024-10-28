@@ -1,0 +1,36 @@
+doctype html
+html(lang="es")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        title Document
+        link(rel="stylesheet", href="../../css/main.css")
+        link(rel="stylesheet", href="../../css/header.css")
+        link(rel="stylesheet", href="../../css/if-else.css")
+    body 
+        include ../../header.pug
+        main 
+            form.formulario
+                h1 Formulario de entrada a la Disco de PEM
+
+                label(for="nombre") Nombre:
+                    input#nombre(type="text")
+                
+                label(for="apellido") Apellido:
+                    input#apellido(type="text")
+                
+                label(for="edad") Edad:
+                    input#edad(type="number" required min="0" max="117")
+                label(for="compania") Compañia:
+                    select#compania(required, type="text")
+                        option(value="ninguna" required, type="text") ninguna
+                        option(value="niño" required, type="text") niño 
+                        option(value="adolescente" required, type="text") adolescente
+                        option(value="adulto" required, type="text") adulto
+                br
+                .enviar 
+                    button#submit Acceder
+
+        script(src="js/if-else_ejercicio1.js")
+        script(src="js/closure_ejercicio2.js")
+            

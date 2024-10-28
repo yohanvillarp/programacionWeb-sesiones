@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sesion 11 | closure</title>
+    <link rel="stylesheet" href="../../css/main.css">
+    <link rel="stylesheet" href="../../css/header.css">
+    <link rel="stylesheet" href="../../css/closure.css">
+  </head>
+  <body> 
+    <header> 
+      <nav class="navbar"><a href="/example/SRC/index.html"><img class="icono" src="/example/SRC/img/icono.png"></a>
+        <ul class="links"> 
+          <li><a href="/example/SRC/sesiones/sesion8.html">SESION N°8</a></li>
+          <li><a href="/example/SRC/sesiones/sesion9.html">SESION N°9</a></li>
+          <li><a href="/example/SRC/sesiones/sesion10.html">SESION N°10</a></li>
+          <li><a href="/example/SRC/sesiones/sesion11.html">SESION N°11</a></li>
+          <li><a href="/example/SRC/sesiones/sesion12.html">SESION N°12</a></li>
+        </ul>
+      </nav>
+    </header>
+    <nav class="explicacion">
+      <div class="ejemplos"> 
+        <h3>Ejemplo 1 </h3>
+        <pre>function base() { 
+    let count = 1;
+
+    //¿el parametro "a" es necesario?
+    function contador(a){ 
+        let count1 = 1; 
+        count = count + count1; 
+        console.log(count); 
+    } 
+    return contador; 
+} 
+const baseFuncion = base(); 
+baseFuncion();</pre>
+        <button id="example1">Ejecutar código </button>
+      </div>
+      <div class="ejemplos"> 
+        <h3>Ejemplo 2</h3>
+        <pre>function makeFunc() { 
+    const name="Mozilla"; 
+    function displayName(){
+        console.log(name);
+    }
+    return displayName;
+} 
+const myFunc = makeFunc(); 
+myFunc(); </pre>
+        <button id="example2">Ejecutar código </button>
+      </div>
+    </nav>
+    <script src="js/closure_ejercicio1.js"></script>
+    <script src="js/closure_ejercicio2.js"></script>
+  </body>
+</html>

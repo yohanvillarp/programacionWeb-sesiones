@@ -1,0 +1,34 @@
+doctype html
+html(lang="es")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        title Document
+        link(rel="stylesheet", href="../../css/main.css")
+        link(rel="stylesheet", href="../../css/header.css")
+        link(rel="stylesheet", href="../../css/switch.css")
+    body 
+        include ../../header.pug
+
+        main 
+            .card 
+                h3 Opción 1
+                p Incluye especial de pescado a la hoja, acompañado de salsa de cocona
+                img(src="img/eleccion1.webp")
+                button#eleccion1 Seleccionar
+
+            .card 
+                h3 Opción 2
+                p Incluye especial de tacacho con cecina mas su refresco de carambola.
+                img(src="img/eleccion2.webp")
+                button#eleccion2 Seleccionar
+
+
+            .card 
+                h3 Opción 3
+                p Incluye caldo de gallina, acompañado de su arroz sin sal.
+                img(src="img/eleccion3.webp")
+                button#eleccion3 Seleccionar
+    
+        script(src="js/switch_ejercicio1.js")
+

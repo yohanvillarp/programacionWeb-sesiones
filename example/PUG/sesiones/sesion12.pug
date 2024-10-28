@@ -1,0 +1,63 @@
+doctype html
+html(lang="es")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        title Sesion 12
+        link(rel="stylesheet", href="../css/main.css")
+        link(rel="stylesheet", href="../css/header.css")
+        link(rel="stylesheet", href="../css/sesion12.css")
+    body 
+        include ../header.pug
+
+        .contenedor
+            .card 
+                h4 Ejercicio 1
+                p De la lista de productos, se requiere obtener aquellos que superen en precio los S/ 220.00
+                .code 
+                    pre. 
+                        let productos = [
+                            {
+                                nombre: "Billetera Renzo Costa",
+                                precio: 250
+                            },
+                            {
+                                nombre: "Whisky Johny Walker etiqueta azul",
+                                precio: 450
+                            },
+                            {
+                                nombre: "Six Pack de cerveza cusqueña Trigo",
+                                precio: 45
+                            },
+                            {
+                                nombre: "Set de herramientas para laptops",
+                                precio: 230
+                            }
+                        ]
+                button#solucion1 Ejecutar Solución
+
+            .card 
+                h4 Ejercicio 2
+                p Calcular el promedio de los alumnos, de acuerdo al siguiente arreglo.
+                .code
+                    pre. 
+                        let alumnos = [
+                            {
+                                nombre: "Fiorella",
+                                notas: [16,18,19]
+                            },
+                            {
+                                nombre: "Matias",
+                                notas: [18,9,10]
+                            },
+                            {
+                                nombre: "Julio",
+                                notas: [18,17,20]
+                            },
+                            {
+                                nombre: "Domitila",
+                                notas: [14,11,8]
+                            }
+                        ]
+                button#solucion2 Ejecutar Solución
+        script(src="sesion12/soluciones.js")

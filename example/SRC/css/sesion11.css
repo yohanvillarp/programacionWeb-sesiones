@@ -1,0 +1,58 @@
+body .ejercicios {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: lightblue;
+}
+body .ejercicios .lista {
+  list-style-type: none;
+}
+body .ejercicios .lista li a {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 25vh;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-decoration: none;
+  padding: 20px;
+  text-align: center;
+  border-radius: 10px;
+  border: 1px solid blueviolet;
+}
+body .ejercicios .lista li a .nroEjercicio {
+  padding: 10px;
+  color: blue;
+  font-size: 25px;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+}
+body .ejercicios .lista li a p {
+  font-size: 18px;
+  padding: 10px;
+}
+body .ejercicios .lista li a img {
+  height: 300px;
+}
+body .ejercicios .lista li a:hover {
+  background-color: chocolate;
+  -webkit-transition-duration: 1s;
+          transition-duration: 1s;
+  color: white;
+}
+body .ejercicios .lista li a:hover .nroEjercicio {
+  color: rgb(18, 3, 31);
+  font-weight: normal;
+}
+body .ejercicios .lista li a:hover p {
+  font-weight: bold;
+}
+body .ejercicios .lista li button {
+  font-size: 20px;
+  border: none;
+  background-color: lightblue;
+  cursor: pointer;
+}

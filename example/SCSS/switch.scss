@@ -1,0 +1,42 @@
+/* Configuración básica del fondo */
+body {
+    main{
+        display: flex;
+        background-color: red;
+        height: calc(100vh - 95px);
+        align-items: center;
+        background: linear-gradient(45deg, #653030, #895c06, #b1cf50, #d7653c, #c51c70);
+        background-size: 400% 400%;
+        animation: discoBackground 5s ease infinite;
+
+        @keyframes discoBackground{
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+
+        .card{
+            margin: 0 auto;
+            max-width: 550px;
+            padding: 20px;
+            border-radius: 5px;
+            background-color: white;
+            box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+            transition: 0.3s;
+
+            h3{
+                padding-bottom: 10px;
+            }
+            img{
+                border-radius: 15px;
+                padding: 20px;
+                width: 100%;
+            }
+
+            button{
+                font-size: 20px;
+                font-weight: bold;
+            }
+        }
+    }   
+}

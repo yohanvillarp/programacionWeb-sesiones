@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sesion 11 | if-else</title>
+    <link rel="stylesheet" href="../../css/main.css">
+    <link rel="stylesheet" href="../../css/header.css">
+    <link rel="stylesheet" href="../../css/if-else.css">
+  </head>
+  <body> 
+    <header> 
+      <nav class="navbar"><a href="/example/SRC/index.html"><img class="icono" src="/example/SRC/img/icono.png"></a>
+        <ul class="links"> 
+          <li><a href="/example/SRC/sesiones/sesion8.html">SESION N°8</a></li>
+          <li><a href="/example/SRC/sesiones/sesion9.html">SESION N°9</a></li>
+          <li><a href="/example/SRC/sesiones/sesion10.html">SESION N°10</a></li>
+          <li><a href="/example/SRC/sesiones/sesion11.html">SESION N°11</a></li>
+          <li><a href="/example/SRC/sesiones/sesion12.html">SESION N°12</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main> 
+      <form class="formulario">
+        <h1>Formulario de entrada a la Disco de PEM</h1>
+        <label for="nombre">Nombre:
+          <input id="nombre" type="text">
+        </label>
+        <label for="apellido">Apellido:
+          <input id="apellido" type="text">
+        </label>
+        <label for="edad">Edad:
+          <input id="edad" type="number" required min="0" max="117">
+        </label>
+        <label for="compania">Compañia:
+          <select id="compania" required type="text">
+            <option value="ninguna" required type="text">ninguna</option>
+            <option value="niño" required type="text">niño </option>
+            <option value="adolescente" required type="text">adolescente</option>
+            <option value="adulto" required type="text">adulto</option>
+          </select>
+        </label><br>
+        <div class="enviar"> 
+          <button id="submit">Acceder</button>
+        </div>
+      </form>
+    </main>
+    <script src="js/if-else_ejercicio1.js"></script>
+    <script src="js/closure_ejercicio2.js"></script>
+  </body>
+</html>

@@ -1,0 +1,72 @@
+body{
+
+    .ejercicios{
+
+        align-items: center;
+        background-color: lightblue;
+
+        
+        .lista{
+            
+            list-style-type: none;
+            
+            li{
+                
+                
+                a{
+                    justify-content: center;
+                    height: calc(100vh/4);
+                    align-items: center;
+                    display: flex;
+                    text-decoration: none;
+                    padding: 20px;
+                    text-align: center;
+                    border-radius: 10px;
+                    border: 1px solid blueviolet;
+                    
+                    .nroEjercicio{
+                        padding: 10px;
+                        color: blue;
+                        font-size: 25px;
+                        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+                    }
+
+                    p{
+                        font-size: 18px;
+                        padding: 10px;
+                    }
+
+                    img{
+                        height: 300px;
+                        
+                    }
+                }
+
+                a:hover{
+                    background-color: chocolate;
+                    transition-duration: 1s;
+                    color: white;
+                    .nroEjercicio{ 
+                        color: rgb(18, 3, 31);
+                        font-weight: normal;
+                    }
+                    p{
+                        font-weight: bold;
+                        
+                        
+                    }
+                }
+                    
+
+                button{
+                    font-size: 20px;
+                    border: none;
+                    background-color: lightblue;
+                    cursor: pointer;
+                }
+            }
+            
+        }
+    }
+    
+}

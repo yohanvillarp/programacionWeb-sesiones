@@ -1,0 +1,71 @@
+@import 'variables';
+
+body{
+    background-color: aquamarine;
+    color: $primary-color;
+    font-family: $main-font;
+
+    /*Placeholder Selector (%)*/
+    %parrafos{
+        padding: 20px;
+        color: indigo;
+        text-shadow: 1px 1px 3px white;
+    }    
+
+    .primicia{
+        //@extend %nombreExtend
+        @extend %parrafos;
+        font-weight: bold;
+    }
+    .noticia{
+        @extend %parrafos;
+        text-decoration: underline;
+    }
+    .publicidad{
+        @extend %parrafos;
+        border: 1px solid red;
+    }
+
+    /*mixin tiene el comportamiento de una función
+    DRY (Don't Repeat Yourself) */
+
+    @mixin border-radius($radius){
+        border: 2px solid white;
+        box-shadow: 1px 1px 10px white;
+        border-radius: $radius;
+    }
+
+    .avatar{
+        width: 200px;
+        //llamado al mixin - ¿función?
+        @include border-radius(50%);
+    }
+
+    .redondo{
+        padding: 10px;
+        cursor: pointer;
+        //llamado al mixin - ¿función?
+        @include border-radius(30px);
+    }
+
+    aside{
+        .btn{
+            padding: 20px;
+            background-color: steelblue;
+            color: white;
+            cursor: pointer;
+
+            //operador &
+            &::hover{
+                font-weight: bold;
+                box-shadow: 2px 2px 10px white;
+            }
+
+            &--shadow{
+                box-shadow: 2px 2px 10px black;
+                background-color: red;
+                color: black;
+            }
+        }
+    }
+}

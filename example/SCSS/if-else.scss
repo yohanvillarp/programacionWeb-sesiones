@@ -1,0 +1,64 @@
+/* Configuración básica del fondo */
+body {
+    main{
+        display: flex;
+        background-color: red;
+        height: calc(100vh - 95px);
+        align-items: center;
+        background: linear-gradient(45deg, #ff0000, #ff00ff, #0000ff, #00ff00, #ffff00);
+        background-size: 400% 400%;
+        animation: discoBackground 5s ease infinite;
+
+        @keyframes discoBackground{
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+
+        .formulario{
+            margin: 0 auto;
+            max-width: 550px;
+            padding: 20px;
+            border-radius: 5px;
+            justify-content: center;
+            border: 1px solid #ccc;
+
+            label{
+                display: block;
+                margin-top: 10px;
+                margin-bottom: 10px;
+                font-size: 25px;
+            }
+
+            input[type="text"]{
+                width: 100%;
+                padding: 10px;
+                border: 1px solid #ccc;
+                border-radius: 5px;
+                margin-bottom: 10px;
+            }
+
+            input[type="number"], select{
+                width: 40%;
+                padding: 10px;
+                border: 1px solid #ccc;
+                border-radius: 5px;
+                margin-bottom: 10px;
+                font-size: 20px;
+            }
+
+            .enviar{
+                text-align: center;
+                #submit{
+                    border : 1px solid #ccc;
+                    border-radius: 5px;
+                    font-size: 40px;
+                    color: white;
+                    cursor: pointer;
+                    background-color: transparent;
+                }
+            }
+            
+        }
+    }   
+}

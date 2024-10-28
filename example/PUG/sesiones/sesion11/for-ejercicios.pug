@@ -1,0 +1,90 @@
+doctype html
+html(lang="es")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        title Document
+        link(rel="stylesheet", href="../../css/main.css")
+        link(rel="stylesheet", href="../../css/header.css")
+        link(rel="stylesheet", href="../../css/for-ejercicios.css")
+    body 
+        include ../../header.pug
+
+        section.ejercicios 
+            ul.lista 
+                li 
+                    .descripcion(href="#")
+                        .contenido
+                            p.nroEjercicio Primer ejercicio
+                            p Con un for imprima los números pares de la tabla de multiplicar del 7 por separado.
+                            button#ejercicio1 Probar código
+
+                            pre.
+                                let resultado;
+                                for(i=1; i<12; i++){
+                                    resultado = i*7;
+                                    if(resultado%2==0)
+                                        console.log("7 * "+i+" = "+resultado);
+                                }
+                            
+                            
+                li 
+                    .descripcion
+                        .contenido
+                            p.nroEjercicio Segundo ejercicio
+                            p Según el número ingresado por un usuario calcula la suma de los valores menores a este número comenzando desde 1
+
+                            button#ejercicio2 Probar código
+
+                            pre. 
+                                let num = parseInt(prompt("Ingrese un número"));
+
+                                function sumaRecursiva(n){
+                                    if(n==1) return 1;
+                                    else return n + sumaRecursiva(n-1);
+                                }
+
+                                let suma = sumaRecursiva(num);
+                                console.log("La suma de los números desde 1 hasta "+num+" es: "+suma);
+
+                                //avisando a usuario(a mi) que vea la consola :)
+                                comun()
+                li  
+                    .descripcion
+                        .contenido
+                            p.nroEjercicio Tercer ejercicio
+                            p Tiene un catálogo de productos con estos precios, 50, 20, 10, 100, 30, 10. Indique cuál es su presupuesto y según el orden en que están indique 	cuánto gastará Ej. si mi presupuesto es 90 considerare 50, 20 y 10.
+                            label(for="presupuesto") Presupuesto 
+                            input#presupuesto(type="number" min="0" name="presupuesto" step="5" value="0")
+                            button#ejercicio3 Probar código
+
+                            pre. 
+                                let presupuesto = document.getElementById("presupuesto").value;
+
+                                //avisando a usuario(a mi) que vea la consola :)
+                                comun();
+
+                                let valores = [50,20,10,100,30,10];
+                                let oneProduct = false;
+
+                                //separador para no generar confusiones
+                                console.log("Productos obtenidos:");
+
+                                for(let i=0; i < valores.length; i++){
+                                    if(presupuesto < valores[i])
+                                        break;
+                                    else{
+                                        presupuesto -= valores[i];
+                                        console.log("Usted obtuvo el producto de "+valores[i]);
+                                        oneProduct = true;
+                                    }   
+                                }
+    
+
+                                //0 productos alcanzados
+                                if(!oneProduct)
+                                    console.log("Vacio como su corazón...");
+
+                                console.log("Te quedan: "+presupuesto+" soles");
+                                    script(src="js/for-ejercicios.js")
+        script(src="js/for-ejercicios.js")

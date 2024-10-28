@@ -1,0 +1,28 @@
+body .explicacion {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 80px;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+body .explicacion .ejemplos h3 {
+  font-size: 35px;
+  padding-bottom: 20px;
+}
+body .explicacion .ejemplos pre {
+  padding: 30px;
+  border-radius: 10px;
+}
+body .explicacion .ejemplos button {
+  border: 1px solid orange;
+  padding: 10px;
+  font-size: 20px;
+  cursor: pointer;
+}
+body .explicacion .ejemplos button:hover {
+  color: white;
+  background-color: rgb(42, 9, 102);
+  -webkit-transition-duration: 1s;
+          transition-duration: 1s;
+}

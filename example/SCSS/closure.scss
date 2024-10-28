@@ -1,0 +1,30 @@
+body{
+    .explicacion{
+        display: flex;
+        padding: 80px;
+        justify-content: space-around;
+
+        .ejemplos{
+            
+            h3{
+                font-size: 35px;
+                padding-bottom: 20px;
+            }
+            pre{
+                padding: 30px;
+                border-radius: 10px;
+            }
+            button{
+                border: 1px solid orange;
+                padding: 10px;
+                font-size: 20px;
+                cursor : pointer;
+            }
+            button:hover{
+                color: white;
+                background-color: rgb(42, 9, 102);
+                transition-duration: 1s;
+            }
+        }
+    }
+}

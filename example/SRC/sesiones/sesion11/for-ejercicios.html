@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sesion 11 | for-ejercicios</title>
+    <link rel="stylesheet" href="../../css/main.css">
+    <link rel="stylesheet" href="../../css/header.css">
+    <link rel="stylesheet" href="../../css/for-ejercicios.css">
+  </head>
+  <body> 
+    <header> 
+      <nav class="navbar"><a href="/example/SRC/index.html"><img class="icono" src="/example/SRC/img/icono.png"></a>
+        <ul class="links"> 
+          <li><a href="/example/SRC/sesiones/sesion8.html">SESION N°8</a></li>
+          <li><a href="/example/SRC/sesiones/sesion9.html">SESION N°9</a></li>
+          <li><a href="/example/SRC/sesiones/sesion10.html">SESION N°10</a></li>
+          <li><a href="/example/SRC/sesiones/sesion11.html">SESION N°11</a></li>
+          <li><a href="/example/SRC/sesiones/sesion12.html">SESION N°12</a></li>
+        </ul>
+      </nav>
+    </header>
+    <section class="ejercicios"> 
+      <ul class="lista"> 
+        <li> 
+          <div class="descripcion" href="#">
+            <div class="contenido">
+              <p class="nroEjercicio">Primer ejercicio</p>
+              <p>Con un for imprima los números pares de la tabla de multiplicar del 7 por separado.</p>
+              <button id="ejercicio1">Probar código</button>
+              <pre>let resultado;
+for(i=1; i<12; i++){
+    resultado = i*7;
+    if(resultado%2==0)
+        console.log("7 * "+i+" = "+resultado);
+}
+
+</pre>
+            </div>
+          </div>
+        </li>
+        <li> 
+          <div class="descripcion">
+            <div class="contenido">
+              <p class="nroEjercicio">Segundo ejercicio</p>
+              <p>Según el número ingresado por un usuario calcula la suma de los valores menores a este número comenzando desde 1</p>
+              <button id="ejercicio2">Probar código</button>
+              <pre>let num = parseInt(prompt("Ingrese un número"));
+
+function sumaRecursiva(n){
+    if(n==1) return 1;
+    else return n + sumaRecursiva(n-1);
+}
+
+let suma = sumaRecursiva(num);
+console.log("La suma de los números desde 1 hasta "+num+" es: "+suma);
+
+//avisando a usuario(a mi) que vea la consola :)
+comun()</pre>
+            </div>
+          </div>
+        </li>
+        <li> 
+          <div class="descripcion">
+            <div class="contenido">
+              <p class="nroEjercicio">Tercer ejercicio</p>
+              <p>Tiene un catálogo de productos con estos precios, 50, 20, 10, 100, 30, 10. Indique cuál es su presupuesto y según el orden en que están indique 	cuánto gastará Ej. si mi presupuesto es 90 considerare 50, 20 y 10.</p>
+              <label for="presupuesto">Presupuesto </label>
+              <input id="presupuesto" type="number" min="0" name="presupuesto" step="5" value="0">
+              <button id="ejercicio3">Probar código</button>
+              <pre>let presupuesto = document.getElementById("presupuesto").value;
+
+//avisando a usuario(a mi) que vea la consola :)
+comun();
+
+let valores = [50,20,10,100,30,10];
+let oneProduct = false;
+
+//separador para no generar confusiones
+console.log("Productos obtenidos:");
+
+for(let i=0; i < valores.length; i++){
+    if(presupuesto < valores[i])
+        break;
+    else{
+        presupuesto -= valores[i];
+        console.log("Usted obtuvo el producto de "+valores[i]);
+        oneProduct = true;
+    }   
+}
+
+
+//0 productos alcanzados
+if(!oneProduct)
+    console.log("Vacio como su corazón...");
+
+console.log("Te quedan: "+presupuesto+" soles");
+    script(src="js/for-ejercicios.js")</pre>
+            </div>
+          </div>
+        </li>
+      </ul>
+    </section>
+    <script src="js/for-ejercicios.js"></script>
+  </body>
+</html>
