@@ -1,0 +1,49 @@
+doctype html
+html(lang="es")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        title Document
+        link(rel="stylesheet", href="../css/main.css")
+        link(rel="stylesheet", href="../css/header.css")
+    body 
+
+        include ../header.pug
+
+        h1#titulo Noticias
+        nav 
+            ul 
+                li.menu Link
+                li.menu Link
+                li.menu Link
+                li.menu Link
+        
+        main#principal 
+        
+        footer.foot 
+        
+        
+        script(src="sesion13/dom.js")
+        
+        hr 
+        p -----------------------------------
+        header
+            h1 Tiendita
+        
+        main 
+            section 
+                p Ingrese productos
+                label(for="idProducto")
+                input(type="text", id="idProducto" placeholder="Ej. Leche de 1 litro")
+                button(id="btnAgregar") Agregar 
+            section 
+                ul.productos 
+        script(src="sesion13/caso1.js")
+
+        hr 
+        p -----------------------------------
+
+        h1 Prueba de LocalStorage 
+
+
+        script(src="sesion13/caso2.js")

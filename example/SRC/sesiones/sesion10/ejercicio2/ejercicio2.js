@@ -7,7 +7,7 @@ document.getElementById("enviar").addEventListener("click", ()=>{
         tipo = "neutro";
     else if(number > 0)
         tipo = "positivo";
-    else
+    else if(number < 0 )
         tipo = "negativo";
     
         alert(`El número ${number} es ${tipo}`)
